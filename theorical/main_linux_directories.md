@@ -194,22 +194,18 @@ network files systems, which are tipically unmounted, or they can be temporary p
 
 There are a few additional directories found in the root directory **(/):** 
 
-|Directory_name|                        Used to                        |
-|--------------|-------------------------------------------------------|
-|**/opt**      |Optional application software packages.                |
-|              |                                                       |
-|**/sys**      |Pseudo virtual file system that provides information   |
-|              |about the system and its hardware.                     |
-|              |It can be used to modify system parameters and for     |
-|              |debugging purposes.                                    |
-|              |                                                       |
-|**/srv**      |Site-specific data provided by the system, rarely used.|
-|              |                                                       |
-|**/temp**     |Temporary file, in some distros they're erased after a |
-|              |reboot and/or may be a ramdisk in memory.              |
-|              |                                                       |
-|**/usr**      |Multi-user apps, utilities and data.                   |
-|              |                                                       |
+|Directory_name|                        Used to                                                                                                                              |
+|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|**/opt**      |Optional application software packages.                                                                                                                      |
+|              |                                                                                                                                                             |
+|**/sys**      |Pseudo virtual file system that provides information about the system and its hardware, can be used to modify system parameters and for debugging purposes.  |
+|              |                                                                                                                                                             |
+|**/srv**      |Site-specific data provided by the system, rarely used.                                                                                                      |
+|              |                                                                                                                                                             |
+|**/temp**     |Temporary file, in some distros they're erased after a reboot and/or may be a ramdisk in memory.                                                             |
+|              |                                                                                                                                                             |
+|**/usr**      |Multi-user apps, utilities and data.                                                                                                                         |
+|              |                                                                                                                                                             |
 
 
 
@@ -219,80 +215,22 @@ The **/usr** directory theorically contains non-essential programs and scripts (
 least the following directories.
 
 
-|Directory_name    |                        Used to                                |
-|------------------|---------------------------------------------------------------|
-|**/usr/include**  | Header files used to compile applications.                    |
-|                  |                                                               | 
-|**/usr/lib**      | Libraries for programs in **/usr/bin and /usr/sbin**          |
-|                  |                                                               | 
-|**/usr/lib64**    | 64 bit libraries for 64 bit programs in **/usr/bin**          |
-|                  | and **/usr/sbin**.                                            |
-|                  |                                                               |
-|**usr/sbin**      | Non essential system binaries, suchs as system daemons.       |
-|                  |                                                               | 
-|**/usr/share**    | Shared data used by apps, generally architecture-independent. |
-|                  |                                                               |
-|**/usr/src**      | Source code, typially for the Linux kernel.                   |
-|                  |                                                               |
-|**/usr/local**    | Local computer specific data and programs, subdirectories     |
-|                  | include **bin, sbin, lib, share, include, etc.**.             |
-|                  |                                                               | 
-|**/usr/bin**      | This is the main directory of system executable commands.     |
-|                  |                                                               | 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+|Directory_name    |                        Used to                                                                             |
+|------------------|------------------------------------------------------------------------------------------------------------|
+|**/usr/include**  | Header files used to compile applications.                                                                 |
+|                  |                                                                                                            | 
+|**/usr/lib**      | Libraries for programs in **/usr/bin and /usr/sbin**                                                       |
+|                  |                                                                                                            | 
+|**/usr/lib64**    | 64 bit libraries for 64 bit programs in **/usr/bin** and **/usr/sbin**.                                    |
+|                  |                                                                                                            |
+|**usr/sbin**      | Non essential system binaries, suchs as system daemons.                                                    |
+|                  |                                                                                                            | 
+|**/usr/share**    | Shared data used by apps, generally architecture-independent.                                              |
+|                  |                                                                                                            |
+|**/usr/src**      | Source code, typially for the Linux kernel.                                                                | 
+|                  |                                                                                                            |
+|**/usr/local**    | Local computer specific data and programs, subdirectories include **bin, sbin, lib, share, include, etc.** |
+|                  |                                                                                                            |
+|**/usr/bin**      | This is the main directory of system executable commands.                                                  |
+|                  |                                                                                                            |
 
