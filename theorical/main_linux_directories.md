@@ -27,7 +27,7 @@ The **/bin** directory has executables binaries, essential commands used to boot
 and essential commands required by all users of the system, such as **cat**, **cp**, **ls**, **mv**, **ps** and **rm**.
 
 **/bin directory**
-![/bin directory](/home/josemacevo/Documents/Development/linux_course/course_images/lsbin.png)
+![](/home/josemacevo/Documents/Development/linux_course/course_images/lsbin.png)
 
 The same way the **/sbin** directory is designed for essential binaries related to system administration, such as 
 **fsck** and **ip**. To see a list of these programs we only need type:
@@ -37,7 +37,7 @@ The same way the **/sbin** directory is designed for essential binaries related 
 
 
 **/sbin directory**
-![/sbin directory](/home/josemacevo/Documents/Development/linux_course/course_images/lssbin.png)
+![](/home/josemacevo/Documents/Development/linux_course/course_images/lssbin.png)
 
 
 
@@ -77,7 +77,7 @@ The second example shows a virtual directory that contains a lot of information 
 configuration. The **/proc file system** is very usefull because the information it reports is collected only as needed and never
 requires disk storage.
 
-![example](/home/josemacevo/Documents/Development/linux_course/course_images/1.png)
+![](/home/josemacevo/Documents/Development/linux_course/course_images/1.png)
 
 
 ## /dev directory.
@@ -95,7 +95,7 @@ are found. The **/dev** contains elements such as:
 
 **/dev directory**
 
-![lsdev](/home/josemacevo/Documents/Development/linux_course/course_images/lsdev.png)
+![](/home/josemacevo/Documents/Development/linux_course/course_images/lsdev.png)
 
 
 ## /var directory.
@@ -109,12 +109,12 @@ the following directories.
 - Temporary files: /var/tmp.
 
 **The /var directory**
-![/var](/home/josemacevo/Documents/Development/linux_course/course_images/lsvar.png)
+![](/home/josemacevo/Documents/Development/linux_course/course_images/lsvar.png)
 
 The **/var** directory can be placed on its own file system so that file growth can be accommodated and any files that suddenly grow very large
 won't fatally affect the system. Network services such as /var/ftp(ftp service) and /var/www (the HTTP web service) are also located in /var.
 
-![/var](/home/josemacevo/Documents/Development/linux_course/course_images/vardir.es.png)
+![](/home/josemacevo/Documents/Development/linux_course/course_images/vardir.es.png)
 
 
 ## /etc directory.
@@ -128,7 +128,7 @@ much more uniformity between distros today.
 Note that **/etc** is for system-wide configuration files and only the superuser can modify the files there. User-especific configuration files are
 always located in your **/home** directory.
 
-![/etc](/home/josemacevo/Documents/Development/linux_course/course_images/debianetc.png)
+![](/home/josemacevo/Documents/Development/linux_course/course_images/debianetc.png)
 
 
 ## /boot directory.
@@ -147,7 +147,7 @@ The **Grand Unified Bootloader (GRUB)** files such as **/boot/grub/grub.conf** o
 The next image shows an example listing of the **/boot** directory, taken from a RHEL system that has multiple kernels installed, including
 the distro-supplied and custom-built kernels. The names will vary and things will be a little different in a different distro.
 
-![/boot](/home/josemacevo/Documents/Development/linux_course/course_images/boot.png)
+![](/home/josemacevo/Documents/Development/linux_course/course_images/boot.png)
 
 
 ## The /lib and /lib64.
@@ -160,7 +160,7 @@ distros there's a **/lib64** directory that contains 64-bit libraries, while **/
 
 In recent Linux distros we can find:
 
-![/lsflib](/home/josemacevo/Documents/Development/linux_course/course_images/lsFlib.png)
+![](/home/josemacevo/Documents/Development/linux_course/course_images/lsFlib.png)
 
 > */lib and /lib64 directories.*
 
@@ -168,7 +168,7 @@ In recent Linux distros we can find:
 That's, just as for **/bin** and **/sbin**, the directories only point to those under **/usr**.
 The kernel modules(kernel code, often device drivers, which can be loaded and unloaded without rebooting the system) are located in **/lib/modules/<kernel-version-number>**.
 
-![/libmodules](/home/josemacevo/Documents/Development/linux_course/course_images/libmodules.png)
+![](/home/josemacevo/Documents/Development/linux_course/course_images/libmodules.png)
 
 > */lib/modules content*
 
@@ -181,12 +181,12 @@ a convenient location. Most linux systems are configured so that any removable m
 While historically this was done under the **/media** directory, modern linux distros place these mount points under the /run directory. For example, a USB pen drive
 labeled myusbdrive for a username student would be mounted in **/run/media/student/myusbdrive**.
 
-![storage](/home/josemacevo/Documents/Development/linux_course/course_images/Forty_years_of_Removable_Storage.jpg)
+![](/home/josemacevo/Documents/Development/linux_course/course_images/Forty_years_of_Removable_Storage.jpg)
 
 The **/mnt** directory has been used since the early days of UNIX to temporarily mount file systems. These can be found on removable media, but can also very often be
 network files systems, which are tipically unmounted, or they can be temporary partitions, or so-called loopback file systems, which are files that appear to be partitions.
 
-![/run](/home/josemacevo/Documents/Development/linux_course/course_images/run.png)
+![](/home/josemacevo/Documents/Development/linux_course/course_images/run.png)
 
 > */run directory*
 
