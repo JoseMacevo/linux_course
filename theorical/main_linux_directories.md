@@ -4,7 +4,7 @@
 
 In this section, we will learn to indentify and differentiate the most important linux directories.
 
-Each user has a personal dirctory normaly located in **/home**
+Each user has a personal directory normaly located in **/home**
 
 On modern linux systems the **/root** is nothing more than the root user's home directory (or superuser or system administrator account).
 
@@ -33,7 +33,7 @@ The same way the **/sbin** directory is designed for essential binaries related 
 **fsck** and **ip**. To see a list of these programs we only need type:
 
 
-- *$ ls /bin /sbin/*
+> *$ ls /bin /sbin/*
 
 
 **/sbin directory**
@@ -46,7 +46,7 @@ Commands that aren't essential (theorically) for the system boot or operate in s
 that could be mounted at a later stage of sytem startup or even over a network. However, todya most consider this distinction to be
 obsolete. In fact, it has been discovered that many distributions cannot boot with this separation, as this modality hasn't been used
 or tested for a long time.
-j
+
 Thus, in some of the newer Linux distros **/usr/bin** and **bin** are symbolically linked to each other, as are **/usr/sbin** and **/sbin**.
 
 ## /proc file system.
@@ -157,4 +157,142 @@ file name begin with **id** or **lib** for example, **/lib/libncurses.so.5.9**.
 
 Most of them are what are known as dynamically loaded libraries (also known as shared libraries or shared objects (Shared Objects SO)). On some linux 
 distros there's a **/lib64** directory that contains 64-bit libraries, while **/lib** contains 32-bit versions.
+
+In recent Linux distros we can find:
+
+![/lsflib](/home/josemacevo/Documents/Development/linux_course/course_images/lsFlib.png)
+
+> */lib and /lib64 directories.*
+
+
+That's, just as for **/bin** and **/sbin**, the directories only point to those under **/usr**.
+The kernel modules(kernel code, often device drivers, which can be loaded and unloaded without rebooting the system) are located in **/lib/modules/<kernel-version-number>**.
+
+![/libmodules](/home/josemacevo/Documents/Development/linux_course/course_images/libmodules.png)
+
+> */lib/modules content*
+
+
+## Removable media: the /media, /run and /mnt directories.
+
+Removable media such as USB drivers, CD's and DVD's are often used. In order for the material to be accesible through the normal file system, they must be mounted in
+a convenient location. Most linux systems are configured so that any removable media is auromatically mounted when the system detects that something has been plugged in.
+
+While historically this was done under the **/media** directory, modern linux distros place these mount points under the /run directory. For example, a USB pen drive
+labeled myusbdrive for a username student would be mounted in **/run/media/student/myusbdrive**.
+
+![storage](/home/josemacevo/Documents/Development/linux_course/course_images/Forty_years_of_Removable_Storage.jpg)
+
+The **/mnt** directory has been used since the early days of UNIX to temporarily mount file systems. These can be found on removable media, but can also very often be
+network files systems, which are tipically unmounted, or they can be temporary partitions, or so-called loopback file systems, which are files that appear to be partitions.
+
+![/run](/home/josemacevo/Documents/Development/linux_course/course_images/run.png)
+
+> */run directory*
+
+## Additional directories:
+
+There are a few additional directories found in the root directory **(/):** 
+
+|Directory_name|                        Used to                        |
+|--------------|-------------------------------------------------------|
+|**/opt**      |Optional application software packages.                |
+|              |                                                       |
+|**/sys**      |Pseudo virtual file system that provides information   |
+|              |about the system and its hardware.                     |
+|              |It can be used to modify system parameters and for     |
+|              |debugging purposes.                                    |
+|              |                                                       |
+|**/srv**      |Site-specific data provided by the system, rarely used.|
+|              |                                                       |
+|**/temp**     |Temporary file, in some distros they're erased after a |
+|              |reboot and/or may be a ramdisk in memory.              |
+|              |                                                       |
+|**/usr**      |Multi-user apps, utilities and data.                   |
+|              |                                                       |
+
+
+
+## /usr directory tree.
+
+The **/usr** directory theorically contains non-essential programs and scripts (in the sense that they shouldn't be necessary to initially boot the system) and has at
+least the following directories.
+
+
+|Directory_name    |                        Used to                                |
+|------------------|---------------------------------------------------------------|
+|**/usr/include**  | Header files used to compile applications.                    |
+|                  |                                                               | 
+|**/usr/lib**      | Libraries for programs in **/usr/bin and /usr/sbin**          |
+|                  |                                                               | 
+|**/usr/lib64**    | 64 bit libraries for 64 bit programs in **/usr/bin**          |
+|                  | and **/usr/sbin**.                                            |
+|                  |                                                               |
+|**usr/sbin**      | Non essential system binaries, suchs as system daemons.       |
+|                  |                                                               | 
+|**/usr/share**    | Shared data used by apps, generally architecture-independent. |
+|                  |                                                               |
+|**/usr/src**      | Source code, typially for the Linux kernel.                   |
+|                  |                                                               |
+|**/usr/local**    | Local computer specific data and programs, subdirectories     |
+|                  | include **bin, sbin, lib, share, include, etc.**.             |
+|                  |                                                               | 
+|**/usr/bin**      | This is the main directory of system executable commands.     |
+|                  |                                                               | 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
