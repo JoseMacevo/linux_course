@@ -89,9 +89,9 @@ This directory:
 - Contains entries created by the **udev**system, which creates and manages all device nodes in linux, dinamically creating them when the devices
 are found. The **/dev** contains elements such as:
 
-    1. /dev/sda1(first hard disc partition).
-    2. /dev/lp1(second printer).
-    3. /dev/random(random numbers source).
+1. /dev/sda1(first hard disc partition).
+2. /dev/lp1(second printer).
+3. /dev/random(random numbers source).
 
 **/dev directory**
 

@@ -37,3 +37,21 @@ The next example shows the diff3 use:
 
 ![diff3](/home/josemacevo/Documents/Development/linux_course/course_images/diff3centos.png)
 
+Many modifications to the source code and configuration files are distributed using patches, which are applied, not 
+surprisingly, with the patch program. A patch file contains the deltas (changes) necessary to update a previous version of a file
+to the new version. Patch files are produced by running diff with the correct options, as in:
+
+> diff -Nur <original_file> <new_file> ><path_file>
+
+Distributing just the patch is more concise and efficient than distributing the entire file. For example, if you only
+need to change one line in a file that contains 1000 lines, the patch file will be only a few lines long.
+
+![](/home/josemacevo/Documents/Development/linux_course/course_images/patchrhel.png)
+
+To apply a patch, you can follow one of this two following methods.
+
+> $ patch -p1 < <patch_file>
+> $ patch <original_file> <patch_file>
+
+The first use is more common, as it's often used to apply changes to an entire directory tree, rather than just a file,
+as in the second example. To understand the use of the -p1 option and many others, see the man page for patch.
