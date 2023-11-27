@@ -1,4 +1,4 @@
-# Comparing files with Diff command.
+# <span style="color:blue"> Comparing files with Diff command.</span>
 
 The **diff** command is used to compare files and directories. This frequently used program has many useful options (queries, man diff) including:
 
@@ -25,7 +25,7 @@ Here is an example using diffuse:
 ![diffuse](/home/josemacevo/Documents/Development/linux_course/course_images/diffuse.png)
 
 
-## Use diff3 and patch
+### <span style="color:red"> Use diff3 and patch </span>
 
 We can compare three files at once using **diff3**, which uses one file as a baseline for the other two. For example, let's say that
 both, you and a coworker have made changes to the same file while working independently at the same time. **diff3** can show the

@@ -1,4 +1,4 @@
-# File utility, how to use it.
+# <span style="color:blue"> File utility, how to use it.</span>
 
 On Linux, a file's extension often doesn't identify what type of file is, as it might on other operating systems.
 You can't assume that a file named *file.txt* is a text file and not an executable program. In Linux, a file name 

@@ -1,11 +1,11 @@
-### Wildcards
+# <span style="color:blue">Wildcards</span>
 
 *We can look for a file name using wildcards.*
 
-1. ? -> Matches with any single carachter.
-2. \* -> Matches with any carachter chain.   
-3. [set] -> Matches with any group of carachters, for example [adf] will match with any occurrence of a, d or f.
-4. [!set] -> Matches with any carachter that isn't inside the carachters group.
+1. ? -> Matches with any single character.
+2. \* -> Matches with any character chain.   
+3. [set] -> Matches with any group of characters, for example [adf] will match with any occurrence of a, d or f.
+4. [!set] -> Matches with any character that isn't inside the characters group.
 
 To locate files with ? wildcard, we've to change any unknown character for ?. For example, if we now that only the
 first two letters are 'ba' of three letters with an extension .out, we only need to write **ls ba?.out**.
@@ -21,4 +21,3 @@ Examples:
 - du \*.?.* -> We can locate the files with a unknown character in between two points.
 
 We can use the same wildcards with the ls command.
-

@@ -1,10 +1,10 @@
-# Main linux directories.
+# <span style="color:blue">Main Linux directories.</span>
 
-## User home directories overview.
+## <span style="color:red">User home directories overview.</span>
 
-In this section, we will learn to indentify and differentiate the most important linux directories.
+In this section, we will learn to identify and differentiate the most important linux directories.
 
-Each user has a personal directory normaly located in **/home**
+Each user has a personal directory normally located in **/home**
 
 On modern linux systems the **/root** is nothing more than the root user's home directory (or superuser or system administrator account).
 
@@ -21,7 +21,7 @@ Example:
 - /home/students/
 
 
-## /bin /sbin directories.
+## <span style="color:red"> /bin /sbin directories. </span>
 
 The **/bin** directory has executables binaries, essential commands used to boot the system or use it in single-user mode,
 and essential commands required by all users of the system, such as **cat**, **cp**, **ls**, **mv**, **ps** and **rm**.
@@ -49,7 +49,7 @@ or tested for a long time.
 
 Thus, in some of the newer Linux distros **/usr/bin** and **bin** are symbolically linked to each other, as are **/usr/sbin** and **/sbin**.
 
-## /proc file system.
+## <span style="color:red"> /proc file system. </span>
 
   Some file systems, like the mounted in **/proc**, are called **pseudo file systems** because they dont have a permanent presence anywhere
 on the disk.
@@ -80,7 +80,7 @@ requires disk storage.
 ![](/home/josemacevo/Documents/Development/linux_course/course_images/1.png)
 
 
-## /dev directory.
+## <span style="color:red"> /dev directory.</span>
 
 The **/dev** directory contains **the device nodes**, a pseudofile type used by the most hardware and software devices, except the network devices
 This directory:
@@ -98,7 +98,7 @@ are found. The **/dev** contains elements such as:
 ![](/home/josemacevo/Documents/Development/linux_course/course_images/lsdev.png)
 
 
-## /var directory.
+## <span style="color:red">/var directory.</span>
 
 The **/var** directory contains files that are expected to change its size and content as the system runs(var means variable), such as entries in
 the following directories.
@@ -117,7 +117,7 @@ won't fatally affect the system. Network services such as /var/ftp(ftp service) 
 ![](/home/josemacevo/Documents/Development/linux_course/course_images/vardir.es.png)
 
 
-## /etc directory.
+## <span style="color:red">/etc directory.</span>
 
 The **/etc** directory is where the system configuration files are. It doesn't executable binaries, although there are some executable scripts.
 For example, **/etc/resolv.conf** tells to the system where to go on the network to obtain the host name in the IP addresses (DNS) mappings.
@@ -131,7 +131,7 @@ always located in your **/home** directory.
 ![](/home/josemacevo/Documents/Development/linux_course/course_images/debianetc.png)
 
 
-## /boot directory.
+## <span style="color:red">/boot directory.</span>
 
 The **/boot** directory contains the few essential files required to boot the system. For each alternative kernel installed on the system there're four files.
 
@@ -150,7 +150,7 @@ the distro-supplied and custom-built kernels. The names will vary and things wil
 ![](/home/josemacevo/Documents/Development/linux_course/course_images/boot.png)
 
 
-## The /lib and /lib64.
+## <span style="color:red">The /lib and /lib64.</span>
 
 **/lib** contains libraries (common code shared by apps and required for them to run) for the essential **/bin** and **/sbin** programs. These library
 file name begin with **id** or **lib** for example, **/lib/libncurses.so.5.9**.
@@ -173,7 +173,7 @@ The kernel modules(kernel code, often device drivers, which can be loaded and un
 > */lib/modules content*
 
 
-## Removable media: the /media, /run and /mnt directories.
+## <span style="color:red"> Removable media: the /media, /run and /mnt directories.</span>
 
 Removable media such as USB drivers, CD's and DVD's are often used. In order for the material to be accesible through the normal file system, they must be mounted in
 a convenient location. Most linux systems are configured so that any removable media is auromatically mounted when the system detects that something has been plugged in.
@@ -190,7 +190,7 @@ network files systems, which are tipically unmounted, or they can be temporary p
 
 > */run directory*
 
-## Additional directories:
+## <span style="color:red">Additional directories:</span>
 
 There are a few additional directories found in the root directory **(/):** 
 
@@ -205,11 +205,10 @@ There are a few additional directories found in the root directory **(/):**
 |**/temp**     |Temporary file, in some distros they're erased after a reboot and/or may be a ramdisk in memory.                                                             |
 |              |                                                                                                                                                             |
 |**/usr**      |Multi-user apps, utilities and data.                                                                                                                         |
-|              |                                                                                                                                                             |
+ 
 
 
-
-## /usr directory tree.
+## <span style="color:red">/usr directory tree.</span>
 
 The **/usr** directory theorically contains non-essential programs and scripts (in the sense that they shouldn't be necessary to initially boot the system) and has at
 least the following directories.
@@ -232,5 +231,5 @@ least the following directories.
 |**/usr/local**    | Local computer specific data and programs, subdirectories include **bin, sbin, lib, share, include, etc.** |
 |                  |                                                                                                            |
 |**/usr/bin**      | This is the main directory of system executable commands.                                                  |
-|                  |                                                                                                            |
+
 

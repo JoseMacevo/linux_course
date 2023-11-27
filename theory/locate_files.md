@@ -1,4 +1,4 @@
-### Commands to locate files.
+# <span style="color:blue"> Commands to locate files.</span>
 
 1. locate <file_name> -> locate a file.
 2. find . -name "<file_name>*" -> locate a file.

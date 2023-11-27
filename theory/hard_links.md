@@ -1,4 +1,4 @@
-### Hard Links
+# <span style="color:blue">Hard Links</span>
 
 The **ln** utility is used for create **hard_links** and (with **-s*** option **soft_links**), also known as **symbolic_links or symlinks**. 
 1. We create a file or we can use a file previously created.
