@@ -1,4 +1,4 @@
-# Data_Backup.
+# <span style="color:blue"> Data_Backup.</span>
 
 There're many ways to do a data backup or even the entire system. Basic ways to do this include using simple
 copies with **cp** and using the more robust **rsync**.
@@ -18,7 +18,7 @@ form of someone@host. The someone@ part is optional and is used if the remote us
 over the network. We often synchronize the destination directory tree with the source, using the **-r option** to recursively
 traverse the directory tree, copying all files and directories below the one listed as the source.
 
-## rsync how to use.
+## <span style="color:red"> rsync how to use.</span>
 
 **rsync** is a powerful utility. For example, a very useful way to backup a project directory could be to use the following command.
 

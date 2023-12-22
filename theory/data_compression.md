@@ -114,4 +114,46 @@ We can separate the archiving and compression stages, as in:
 - tar cvf mydir.tar mydir; gzip mydir.tar
 - gunzip mydir.tar.gz; tar xvf mydir.tar
 
-But this is slower and wastes space by creating an unnecessary intermediary **.tar** file.
+but this is slower and wastes space by creating an unnecessary intermediary
+**.tar** file.
+
+### <span style="color:red"> Relative compression times and sizes. </span>
+
+To show the relative efficiency of **gzip, bzip2, and xz**, the following
+screenshot show the result of compressing a directory tree of purely text files
+(the include directory of the kernel source files) using all three methods.
+
+![sizes](/home/josemacevo/Documents/Development/linux_course/course_images/times.png)
+
+> Relative compression times and sizes.
+
+This shows that as compression factors increase, CPU time increases as well 
+(i.e producing smaller files takes longer.)
+
+### <span style="color:red"> Disc to Disc copy (dd)</span>
+
+The **dd** program is very useful for making copies or raw disc space. For example, to back up the
+**Master Boot Record (MBR)** (the first 512-byte sector of the disc that contains a table describing the partitions
+on that disc), you can type:
+
+> dd if=/dev/sda of=sda.mbr bs=512 count=1
+
+:warning:<span style="color:red"> WARNING!! </span>:warning:
+
+Writing:
+
+> dd if=/dev/sda of=/dev/sdb
+
+to make a copy of one disc to another, you'll delete everything that previously existed on the second disk.
+An exact copy of the first disc device is created on the second disc device.
+
+<span style="color:red"> Don't experiment with this command as written above, as it could erase a hard drive. </span>
+
+What exactly the command **dd** means is often an item of discussion. The words *"data definition"* is the most popular
+theory and has its roots in the early years of IBM's history. People often joke that it means disc destroyer and other
+variants, such as delete data.
+
+![data](/home/josemacevo/Documents/Development/linux_course/course_images/dd.png)
+> Disc to Disc copy. :point_up_2:
+
+
